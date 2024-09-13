@@ -3,7 +3,6 @@
 // import viteLogo from '/vite.svg'
 import './App.css'
 import Landing from './components/Landing';
-import ResumeLink from './components/ResumeLink';
 
 function App() {
 
@@ -12,9 +11,6 @@ function App() {
       <div className="App">
         <Landing />
       </div>
-      <button>
-        <ResumeLink />
-      </button>
     </>
   )
 }
