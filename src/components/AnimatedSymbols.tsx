@@ -16,17 +16,17 @@ const AnimatedSymbols: React.FC = () => {
     const colors = ['#3B82F6', '#10B981', '#F59E0B', '#EF4444', '#8B5CF6']
     return Array.from({ length: 30 }, (_, i) => ({
       id: i,
-      content: ['{}', '()', '[]'][Math.floor(Math.random() * 3)],
+      content: ['{}', '()', '[]'][Math.floor(Math.random() * 5)],
       x: Math.random() * 100,
       y: Math.random() * 100,
-      size: Math.random() * 32 + 24, // Random size between 24px and 56px
-      duration: Math.random() * 20 + 10, // Random duration between 10s and 30s
+      size: Math.random() * 32 + 24,
+      duration: Math.random() * 20 + 10,
       color: colors[Math.floor(Math.random() * colors.length)],
     }))
   }, [])
 
   return (
-    <div className="fixed inset-0 overflow-hidden pointer-events-none">
+    <div className="w-full h-full">
       {symbols.map((symbol) => (
         <motion.div
           key={symbol.id}
@@ -38,15 +38,29 @@ const AnimatedSymbols: React.FC = () => {
             color: symbol.color,
           }}
           animate={{
-            x: ['0%', '100%', '0%'],
-            y: ['0%', '100%', '0%'],
+            x: ['-100%', '100%'],
+            y: ['-100%', '100%'],
             opacity: [0.4, 0.8, 0.4],
           }}
           transition={{
-            duration: symbol.duration,
-            repeat: Infinity,
-            repeatType: 'reverse',
-            ease: 'linear',
+            x: {
+              duration: symbol.duration,
+              repeat: Infinity,
+              repeatType: 'reverse',
+              ease: 'linear',
+            },
+            y: {
+              duration: symbol.duration * 1.2,
+              repeat: Infinity,
+              repeatType: 'reverse',
+              ease: 'linear',
+            },
+            opacity: {
+              duration: symbol.duration / 2,
+              repeat: Infinity,
+              repeatType: 'reverse',
+              ease: 'linear',
+            },
           }}
         >
           {symbol.content}
