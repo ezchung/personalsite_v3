@@ -2,6 +2,7 @@
 // import reactLogo from './assets/react.svg'
 // import viteLogo from '/vite.svg'
 import './App.css'
+// import Intro from './components/Intro'; //Will introduce later
 import Landing from './components/Landing';
 
 function App() {
