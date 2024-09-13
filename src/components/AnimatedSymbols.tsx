@@ -1,5 +1,6 @@
 import React from 'react'
 import { motion } from 'framer-motion'
+//React and the motion component from Framer Motion, which we'll use for animations.
 
 interface Symbol {
   id: number
@@ -11,6 +12,13 @@ interface Symbol {
   color: string
 }
 
+//define two interfaces: Symbol (for each animated symbol) and AnimatedSymbolsProps (for the component props).
+
+
+/**
+ * 
+ * @returns AnimatedSymbols Component
+ */
 const AnimatedSymbols: React.FC = () => {
   const symbols: Symbol[] = React.useMemo(() => {
     const colors = ['#3B82F6', '#10B981', '#F59E0B', '#EF4444', '#8B5CF6']
@@ -25,6 +33,25 @@ const AnimatedSymbols: React.FC = () => {
     }))
   }, [])
 
+  /** Notes for codebase
+   * useMemo is used to memoize the symbol generation, preventing unnecessary re-renders.
+   * We create an array of 30 symbols, each with random properties (position, size, color, etc.).
+   * The content is randomly chosen from {}, (), or [].
+   */
+
+
+  /**
+   * We map over the symbols array, creating a motion.div for each symbol.
+   * Each symbol is positioned absolutely based on its x and y values.
+   * The animate prop defines the movement: symbols move diagonally from top-left to bottom-right and back, while fading in and out.
+   * The transition prop sets the animation duration and behavior (infinite repeat, reversing direction).
+    
+  So result should be in practice
+  1. When component mounts, generates an array of 30 random symbols
+  2. These symbols are rendered as absolutely positioned motion.div elements
+  3. Each symbol animates continuously, moving diagonally 
+  4. The content passed as children to this component is rendered on top of the animated background.
+  */
   return (
     <div className="w-full h-full">
       {symbols.map((symbol) => (
