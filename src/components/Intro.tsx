@@ -1,8 +1,6 @@
 import React from 'react';
 import './Landing.css';
 
-import ResumeLink from './ResumeLink';
-
 interface Props {}
 
 const Intro: React.FC<Props> = () => {
@@ -10,9 +8,6 @@ const Intro: React.FC<Props> = () => {
     <section className="landing">
         <div className="background">
             <h1>Hello World</h1>
-            <button>
-                <ResumeLink />
-            </button>
         </div>
     </section>
   );

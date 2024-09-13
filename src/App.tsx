@@ -1,6 +1,3 @@
-// import { useState } from 'react'
-// import reactLogo from './assets/react.svg'
-// import viteLogo from '/vite.svg'
 import './App.css'
 // import Intro from './components/Intro'; //Will introduce later
 import Landing from './components/Landing';
@@ -20,7 +17,11 @@ export default App
 
 
 /**
- *     before return   const [count, setCount] = useState(0)    
+ * // import { useState } from 'react'
+// import reactLogo from './assets/react.svg'
+// import viteLogo from '/vite.svg'    
+ * 
+ * before return   const [count, setCount] = useState(0)    
  *     <div>
         <a href="https://vitejs.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />

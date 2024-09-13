@@ -48,3 +48,7 @@ export default tseslint.config({
   },
 })
 ```
+### Tools / Languages
+- framer motion
+- React TS
+- built on vite

@@ -4,7 +4,6 @@ import './Landing.css';
 import ResumeLink from './ResumeLink';
 import AnimatedLines from './AnimatedLines';
 
-import AnimatedSymbols from './AnimatedSymbols';
 //import AnimatedSymbols from './AnimatedSymbols';
 //can add later. trying to use z-index to bring this text out to the front
 
@@ -15,7 +14,6 @@ const Landing: React.FC<Props> = () => {
     <section className="landing">
         <div className="background">
             <h1>Ezra Chung is a software engineer</h1>
-            <AnimatedLines />
             <button>
                 <ResumeLink />
             </button>
