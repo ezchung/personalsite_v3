@@ -1,12 +1,16 @@
 import React from 'react';
 import './Landing.css';
+import AnimatedBackground from './AnimatedSymbols';
 
 interface Props {}
 
-function Landing(props: Props): JSX.Element {
+const Landing: React.FC<Props> = () => {
   return (
     <section className="landing">
-      <h1>Ezra Chung is a software engineer</h1>
+      <div className="background">
+        <AnimatedBackground />
+        <h1>Ezra Chung is a software engineer</h1>
+      </div>
     </section>
   );
 };
