@@ -3,6 +3,7 @@
 // import viteLogo from '/vite.svg'
 import './App.css'
 import Landing from './components/Landing';
+import 
 
 function App() {
 
@@ -10,6 +11,15 @@ function App() {
     <>
       <div className="App">
         <Landing />
+      </div>
+      <div>
+        <a
+          href="/resume.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          View my resume
+        </a>
       </div>
     </>
   )
