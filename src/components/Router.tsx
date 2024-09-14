@@ -1,25 +1,25 @@
-import React from "react";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Intro from "./Intro";
-import Landing from "./Landing";
-import NavBar from "./Navbar";
-import ProjectsSection from "./ProjectsSection";
-import ResumeLink from "./ResumeLink";
+import React from 'react'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
-const Router:React.FC = () => {
-    return (
-        <BrowserRouter>
-        <NavBar />
-        <Routes>
-          <Route path="/projects" element={<ProjectsSection/>} />
-          {/* Will change to projects page. where all projects are shown */}
-          <Route path="/intro" element={<Intro/>} />
-          {/* need to add resume link here as well */}
-          <ResumeLink />
-          <Route path="/" element={<Landing/>} />
-        </Routes>
-      </BrowserRouter>
-    );
-  };
-  
-  export default Router;
+import NavBar from './Navbar'
+import Landing from './Landing'
+import Intro from './Intro'
+import ResumeLink from './ResumeLink'
+import Experience from './Experience'
+import ProjectsSection from './ProjectsSection'
+
+const Router: React.FC = () => {
+  return (
+    <BrowserRouter>
+      <NavBar />
+      <Routes>
+        <Route path="/home" element={<Landing />} />
+        <Route path="/about" element={<Intro />} />
+        <Route path="/projects" element={<ProjectsSection />} />
+        <Route path="/experience" element={<Experience />} />
+      </Routes>
+    </BrowserRouter>
+  )
+}
+
+export default Router
