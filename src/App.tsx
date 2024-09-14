@@ -1,13 +1,38 @@
 import './App.css'
 // import Intro from './components/Intro'; //Will introduce later
 import Landing from './components/Landing';
+import Router from './components/Router';
 
 function App() {
 
   return (
     <>
       <div className="App">
-        <Landing />
+        <section>
+          <Router />
+        </section>
+        <section>
+          <Landing />
+          Hero Landing
+        </section>
+        <section>
+          Parallax
+        </section>
+        <section>
+          Introduction
+        </section>
+        <section>
+          Parallax
+        </section>
+        <section>
+          Projects
+        </section>
+        <section>
+          Experience
+        </section>
+        <section>
+          Contact
+        </section>
       </div>
     </>
   )
