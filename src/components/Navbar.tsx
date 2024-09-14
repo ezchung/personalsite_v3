@@ -1,28 +1,22 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import "./NavBar.css";
-import ResumeLink from "./ResumeLink";
+import React from 'react'
+import { Link } from 'react-router-dom'
+import ResumeLink from './ResumeLink'
+import './Navbar.css'
 
 const NavBar: React.FC = () => {
   return (
-    <nav className="NavBar">
-      <Link to="/">
-        Logo
-      </Link>
-      <Link to="/intro">
-        About Me
-      </Link>
-      <Link to="/projects">
-        Projects
-      </Link>
-      <Link to="/Resume">
-        <ResumeLink />
-      </Link>
-      <Link to="/Contact">
-        Contact
-      </Link>
-    </nav>
-  );
+    <div className='navbar'>
+      <div className='wrapper'>
+        <Link to="/" className="logo">EZ</Link>
+        <div className='non_logos'>
+          <Link to="/about">About Me</Link>
+          <Link to="/projects">Projects</Link>
+          <Link to="/experience">Experience</Link>
+          <button><ResumeLink /></button>
+        </div>
+      </div>
+    </div>
+  )
 }
 
-export default NavBar;
+export default NavBar
