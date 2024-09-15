@@ -14,9 +14,6 @@ const Landing: React.FC<Props> = () => {
     <section className="landing">
         <div className="background">
             <h1>Ezra Chung is a software engineer</h1>
-            <button>
-                <ResumeLink />
-            </button>
         </div>
     </section>
   );

@@ -1,19 +1,15 @@
+import React from 'react';
 import './App.css'
-// import Intro from './components/Intro'; //Will introduce later
 import Landing from './components/Landing';
 import Router from './components/Router';
 
 function App() {
-
   return (
-    <>
-      <div className="App">
-        <section>
-          <Router />
-        </section>
+    <div className="App">
+      <Router />
+      <div className="content-wrapper">
         <section>
           <Landing />
-          Hero Landing
         </section>
         <section>
           Parallax
@@ -34,13 +30,12 @@ function App() {
           Contact
         </section>
       </div>
-    </>
+      <Router />
+    </div>
   )
 }
 
 export default App
-
-
 /**
  * // import { useState } from 'react'
 // import reactLogo from './assets/react.svg'
