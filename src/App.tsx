@@ -1,4 +1,3 @@
-import React from 'react';
 import './App.css'
 import Landing from './components/Landing';
 import Router from './components/Router';
@@ -7,7 +6,6 @@ function App() {
   return (
     <div className="App">
       <Router />
-      <div className="content-wrapper">
         <section>
           <Landing />
         </section>
@@ -29,8 +27,6 @@ function App() {
         <section>
           Contact
         </section>
-      </div>
-      <Router />
     </div>
   )
 }
