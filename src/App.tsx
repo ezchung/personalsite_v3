@@ -7,27 +7,8 @@ function App() {
   return (
     <div className="App">
       <Router />
-      <Landing />
-      <Intro />
-      <Landing></Landing>
-        <section>
-          Parallax
-        </section>
-        <section>
-          <Intro />
-        </section>
-        <section>
-          Parallax
-        </section>
-        <section>
-          Projects
-        </section>
-        <section>
-          Experience
-        </section>
-        <section>
-          Contact
-        </section>
+      <section><Landing /></section>
+      <section><Intro /></section>
     </div>
   )
 }

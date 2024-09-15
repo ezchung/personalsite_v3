@@ -19,4 +19,6 @@ const NavBar: React.FC = () => {
   )
 }
 
+//going to navbar to link to the sections
+
 export default NavBar
