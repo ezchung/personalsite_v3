@@ -4,7 +4,6 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import NavBar from './Navbar'
 import Landing from './Landing'
 import Intro from './Intro'
-import ResumeLink from './ResumeLink'
 import Experience from './Experience'
 import ProjectsSection from './ProjectsSection'
 
