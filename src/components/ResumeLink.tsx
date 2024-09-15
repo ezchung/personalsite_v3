@@ -21,7 +21,7 @@ const ResumeLink: React.FC = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          View my resume
+          Resume
         </a>
       </div>
     );
