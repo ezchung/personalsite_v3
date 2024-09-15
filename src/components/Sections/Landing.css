@@ -1,0 +1,26 @@
+.landing{
+    padding: 10vh 0;
+}
+
+.background{
+    padding: 0 10vh;
+    position: relative;
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 5vh;
+}
+
+.imageContainer{
+    margin-top: 150px;
+}
+
+.hero h1 span{
+    text-align: center;
+    width: 70%;
+    font-weight: 60;
+    /* background: linear-gradient(270 deg, #df8908 10%, #b415ff 100%);
+    background-clip:text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; not working rn*/
+}
