@@ -16,17 +16,22 @@ const NavBar: React.FC = () => {
     }, 100);
   };
 
+  const scrollToTop = () => {
+    navigate('/');
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
   return (
     <nav className='navbar'>
       <div className='wrapper'>
-        <Link to="/" className="logo" onClick={() => scrollToSection('home')}>EZ</Link>
+        <Link to="/" className="logo" onClick={scrollToTop}>EZ</Link>
         <div className='non_logos'>
           <a href="#about" onClick={(e) => { e.preventDefault(); scrollToSection('about'); }}>About Me</a>
           <Link to="/projects">Projects</Link>
           <a href="#experience" onClick={(e) => { e.preventDefault(); scrollToSection('experience'); }}>Experience</a>
           <a href="#contact" onClick={(e) => { e.preventDefault(); scrollToSection('contact'); }}>Contact</a>
         </div>
-        <button className='resume_btn'><ResumeLink /></button>
+        <button className='resume_btn'><ResumeLink /></button> 
       </div>
     </nav>
   )
