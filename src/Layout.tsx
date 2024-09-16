@@ -4,7 +4,6 @@ import Landing from './components/Sections/Landing'
 import Intro from './components/Sections/Intro'
 import Experience from './components/Sections/Experience'
 import Contact from './components/Sections/Contact'
-import App from './App'
 
 const Layout: React.FC = () => {
   return (
@@ -21,3 +20,5 @@ const Layout: React.FC = () => {
 }
 
 export default Layout
+
+//Main home page
