@@ -1,21 +1,24 @@
+// Router.tsx
 import React from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-
 import NavBar from './Navbar'
-import Landing from './Landing'
-import Intro from './Intro'
-import Experience from './Experience'
-import ProjectsSection from './ProjectsSection'
+import Layout from '../../Layout'
+import './Router.css'
+import Projects from '../SinglePages/Projects'
 
 const Router: React.FC = () => {
   return (
     <BrowserRouter>
-      <NavBar />
       <Routes>
-        <Route path="/home" element={<Landing />} />
-        <Route path="/about" element={<Intro />} />
-        <Route path="/projects" element={<ProjectsSection />} />
-        <Route path="/experience" element={<Experience />} />
+        <Route path="/" element={<Layout />} />
+        <Route path="/projects" element={
+          <div className='projectsPage'>
+            <NavBar />
+            <main className='projectsContent'>
+              <Projects />
+            </main>
+          </div>
+        } />
       </Routes>
     </BrowserRouter>
   )
