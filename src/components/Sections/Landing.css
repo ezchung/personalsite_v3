@@ -1,77 +1,77 @@
 .landing-container {
-  display: flex;
-  /* min-height: 100vh; */
-  background-color: #f5f5f5;
-  color: #333;
-  font-family: Inter, sans-serif;
-}
-
-.content-wrapper {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 100%;
-  padding: 2rem;
-  padding-bottom: 4rem; /* Increased bottom padding */
-}
-
-.text-content {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
-
-h1 {
-  font-size: 3rem;
-  font-weight: bold;
-  margin-bottom: 1rem;
-  text-align: left;
-}
-
-.icon-container {
-  display: flex;
-  gap: 1rem;
-  margin-bottom: 2rem;
-}
-
-.icon {
-  width: 40px;
-  height: 40px;
-  background-color: #555;
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 4px;
-  font-weight: bold;
-}
-
-.image-container {
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  flex-grow: 1;
-}
-
-.anime-image {
-  max-width: 100%;
-  max-height: calc(60vh - 2rem); /* Adjusted max-height */
-  object-fit: contain;
-}
-
-@media (min-width: 768px) {
+    display: flex;
+    /* min-height: 100vh; Will add the white space*/ 
+    background-color: #f5f5f5;
+    color: #333;
+    font-family: Inter, sans-serif;
+  }
+  
   .content-wrapper {
-    flex-direction: row;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    padding: 2rem 2rem 0 2rem; 
+  }
+  
+  .text-content {
+    display: flex;
+    flex-direction: column;
     align-items: flex-start;
   }
-
-  .text-content {
-    flex: 1;
-    margin-right: 2rem;
+  
+  h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    text-align: left;
   }
-
+  
+  .icon-container {
+    display: flex;
+    /* width: 100%;  will take up the full width of its parent container*/
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .icon {
+    width: 40px;
+    height: 40px;
+    background-color: #555;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    font-weight: bold;
+  }
+  
   .image-container {
-    flex: 1;
-    justify-content: flex-end;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-grow: 1;
   }
-}
+  
+  .anime-image {
+    max-width: 100%;
+    max-height: 60vh;
+    object-fit: contain;
+  }
+  
+  @media (min-width: 768px) {
+    .content-wrapper {
+      flex-direction: row;
+      align-items: flex-start;
+    }
+  
+    .text-content {
+      flex: 1;
+      margin-right: 2rem;
+    }
+  
+    .image-container {
+      flex: 1;
+      justify-content: flex-end;
+    }
+  }
