@@ -16,9 +16,11 @@ export default function Component() {
           </div>
         </div>
         <div className="image-container">
-          <div className="pseudo-image"> 
-            <img src="/images/Anime_Man_Reading.png" alt="anime man walking"></img>
-          </div>
+          <img
+            src="/images/Anime_Man_Reading.png"
+            alt="Anime character reading a book"
+            className="anime-image"
+          />
         </div>
       </div>
     </div>
