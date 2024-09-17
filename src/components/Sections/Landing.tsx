@@ -1,7 +1,7 @@
 import React from 'react';
 import './Landing.css';
 
-export default function Component() {
+const Landing: React.FC = () => {
   return (
     <div className="landing-container">
       <div className="content-wrapper">
@@ -26,6 +26,8 @@ export default function Component() {
     </div>
   );
 }
+
+export default Landing;
 
 {/* <img src="/images/Anime_Man_Reading.png" alt="anime man walking"></img> */}
 /**
