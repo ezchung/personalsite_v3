@@ -1,26 +1,31 @@
 import React from 'react';
 import './Landing.css';
 
-//import AnimatedSymbols from './AnimatedSymbols';
-//can add later. trying to use z-index to bring this text out to the front
-
-interface Props {}
-
-const Landing: React.FC<Props> = () => {
+export default function Component() {
   return (
-    <section className="landing">
-        <div className="background">
-            <h1><span>Ezra Chung is a software engineer</span></h1>
-            <div className="imageContainer">
-                <img src="/images/Anime_Man_Reading.png" alt="man walking"></img>
-            </div>
+    <div className="landing-container">
+      <div className="content-wrapper">
+        <div className="text-content">
+          <h1>Ezra Chung is a software engineer</h1>
+          <div className="icon-container">
+            {['TS', 'N', 'R', 'JS'].map((icon, index) => (
+              <div key={index} className="icon">
+                {icon}
+              </div>
+            ))}
+          </div>
         </div>
-    </section>
+        <div className="image-container">
+          <div className="pseudo-image"> 
+            <img src="/images/Anime_Man_Reading.png" alt="anime man walking"></img>
+          </div>
+        </div>
+      </div>
+    </div>
   );
-};
+}
 
-export default Landing;
-
+{/* <img src="/images/Anime_Man_Reading.png" alt="anime man walking"></img> */}
 /**
  *     <section className="landing">
         <div className="Animated fixed inset-0 overflow-hidden pointer-events-none">
