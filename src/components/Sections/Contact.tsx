@@ -4,11 +4,9 @@ interface Props {}
 
 const Contact: React.FC<Props> = () => {
   return (
-    <section className="projSection">
-        <div className="background">
-            <h1>Here At CONTACT</h1>
-        </div>
-    </section>
+    <div className="contact-container">
+        <h1>Here At CONTACT</h1>
+    </div>
   );
 };
 
