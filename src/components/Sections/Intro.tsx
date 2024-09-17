@@ -7,8 +7,12 @@ const Intro: React.FC<Props> = () => {
   return (
     <div className="intro">
       <div className="intro-title">
-        <h1>Introduction</h1>
-        
+        <h1>Hello World</h1>
+        <p>I'm a full stack developer and UX designer</p>
+        <p>Skills</p>
+        <ul>
+          <li>Python, JavaScript</li>
+        </ul>
       </div>
     </div>
   );
