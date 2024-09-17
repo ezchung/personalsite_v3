@@ -35,7 +35,7 @@ body{
 }
 
 section {
-  min-height: 100vh; /* Changed from height to min-height */
+  /* min-height: 100vh; Changed from height to min-height */
   display: flex;
   flex-direction: column;
   justify-content: center;
