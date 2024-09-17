@@ -15,9 +15,9 @@ const Landing: React.FC = () => {
             ))}
           </div>
         </div>
-        <div className="slidingTextContainer">
+        {/* <div className="slidingTextContainer">
           Hello World
-        </div>
+        </div>  possible slidingText behind everything*/}
         <div className="image-container">
           <img
             src="/images/Anime_Man_Reading.png"
